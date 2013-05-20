@@ -1,0 +1,22 @@
+# Required
+# --------
+
+scheme: sftp
+host: example.com
+username: user
+password: pass
+
+# Optional
+# --------
+
+# Remote path
+path: path/to/deployment
+
+# Remote file name in which the current revision is stored
+revision_file: .revision
+
+# These files (from Git) will not be uploaded during a deploy
+exclude:
+    - .gitignore
+    - dandelion.yml
+	
